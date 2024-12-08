@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RPS Game</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kenia&family=Orbitron:wght@600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="cover-div">
+
+      <div class="title-move-div">
+
+          <div class="title-div">
+          <p style="
+          font-family: kenia;
+          font-size: 20px;
+          ">ROCK PAPER SCISSORS</p>
+          <p style="color: rgba(9, 227, 9, 0.89);
+          font-family: Kenia, sans-serif;
+          font-size: 40px;
+          ">GAME</p>
+          </div>
+    
+          <div class="container-btn-div">
+    
+          <div class="button-div" onclick=" 
+          playGame('Rock'); 
+          ">
+    
+          <img class="img" src="img/rock-emoji.png" alt="">
+    
+          </div>
+    
+          <div  class="button-div" onclick=" 
+          playGame('Paper'); 
+          ">
+          <img class="img" src="img/paper-emoji.png" alt="">
+    
+          </div>
+    
+          <div class="button-div" onclick=" 
+          playGame('Scissors');
+          " >
+    
+          <img class="img" src="img/scissors-emoji.png" alt="">
+    
+          </div>
+    
+          </div>
+
+          <div class="score-div">
+            <p class="js-score"></p>
+
+            <button class="js-reset reset-btn" onclick=" 
+
+            Score.Wins=0;
+            Score.Loss=0;
+            Score.Tie=0;
+            localStorage.removeItem('score');
+            updateScore();
+            ">Reset Score</button>
+          </div>
+
+      </div>
+
+      <div class="result-div">
+
+        <div>
+
+          <p style="
+          font-size: 23px;
+          " class="js-result"></p>
+
+        </div>
+    
+        <div class="moves-div">
+
+          <p style="margin-right: 20px;" class="js-playermove"></p>
+          <p class="js-computermove"></p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

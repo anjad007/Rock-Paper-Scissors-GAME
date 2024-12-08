@@ -1,0 +1,94 @@
+body{
+  font-family: arial;
+  font-weight: bold;
+  color: rgb(231, 229, 229);
+  margin: 0px;
+
+  background-image: url('img/rps-backround.jpg');
+  text-align: center;
+  background-size: cover;
+}
+
+.cover-div{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+
+.title-move-div{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  margin-top: 10px;
+}
+
+.title-div{
+  line-height:0px;
+  text-align: start;
+  margin:30px 0 0px 20px ;
+}
+
+.container-btn-div{
+  display: flex;
+  align-items: center;
+  justify-content:start;
+  margin: 30px ;
+}
+
+.score-div{
+  text-align: center;
+  margin:30px 0 0px 20px ;
+}
+
+.button-div{
+  background-color: transparent;
+  border: 6px solid rgb(216, 215, 215);
+  padding: 30px ;
+  border-radius: 100px;
+  transition: border 0.1s;
+  margin: 0 30px 30px 0px;
+}
+.button-div:hover{
+  border: 6px solid green;
+  cursor: pointer;
+}
+
+.result-div{
+  background-color: rgba(0, 0, 0, 0.306);
+  display: inline-block;
+}
+
+.reset-btn{
+  padding: 6px 10px;
+  background-color: rgb(173, 9, 9);
+  border: none;
+  border-radius: 3px;
+  color: rgb(223, 219, 219);
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.reset-btn:hover{
+  opacity: 0.7;
+}
+
+.img{
+  height: 50px;
+}
+
+.img-score1{
+  height: 50px;
+  transform: rotate(90deg);
+}
+
+.img-score2{
+  height: 50px;
+  transform: rotate(-90deg);
+}
+
+.moves-div{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
